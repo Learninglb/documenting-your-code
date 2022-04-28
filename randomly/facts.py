@@ -2,6 +2,7 @@ import requests
 from requests.exceptions import RequestException
 
 
+""" docstring """
 # Returns random facts for website in specified output and language
 def generate_random_fact(output_format: str, language: str):
     # language must be english or german
