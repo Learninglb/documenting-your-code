@@ -2,10 +2,12 @@ import requests
 from requests.exceptions import RequestException
 
 
-def generate_random_fact(output_format, language):
+# Returns random facts for website in specified output and language
+def generate_random_fact(output_format: str, language: str):
+    # language must be english or german
     if language not in {"en", "de"}:
         raise ValueError(f"{language} is not supported.")
-
+    # must be in specified format
     if output_format not in {"html", "json", "txt", "md"}:
         raise ValueError(f"{output_format} is not supported.")
 

@@ -2,7 +2,8 @@ import numpy as np
 from scipy.stats import poisson, uniform
 
 
-def generate_poisson_points(bounds, rate):
+def generate_poisson_points(
+        bounds: Tuple[float, float, float, float], rate: float) -> np.ndarray:
     dx = bounds[2] - bounds[0]
     dy = bounds[3] - bounds[1]
 
