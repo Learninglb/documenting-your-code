@@ -5,3 +5,6 @@ parts:
     chapters:
     - file: guides/install
     - file: guides/facts
+  - caption: API reference
+    chapters:
+      - glob: api/*
